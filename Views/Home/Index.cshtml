@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+</head>
+<body>
+    @{
+        string[] arr = new string[] {"Apple Pie", "Burritos", "Clams Casino", "Donuts"};
+        for(int i = 0; i <arr.Length; i++){
+            if(arr[i][0]=='C'){
+                <p style="color: red;">@arr[i]</p>
+            }
+            else{
+                <p>@arr[i]</p>
+            }
+        }
+    }
+</body>
+</html>
